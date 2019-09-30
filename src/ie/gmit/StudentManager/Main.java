@@ -10,13 +10,34 @@ public class Main {
 	    // Run the start method of the Menu object 
 	    menuObj1.start();	
 		
-	    StudentManager sm1 = new StudentManager ();	
+	    StudentManager sm1 = new StudentManager();	
+	    
+	    Student student1 = new Student("G0022222");
+	    Student student2 = new Student("G0033333");
+		Student student3 = new Student("G0044444");
+	    
+	    sm1.add(student1);
+	    sm1.add(student2);
+	    sm1.add(student3);
+	    
+	    System.out.println(sm1.findTotalStudents());
+	    
+	    sm1.delete(student1);
+	    
+	    System.out.println(sm1.findTotalStudents());
+	    
+	    Menu menuObject1 = new Menu();
+	    menuObject1.display();
+	    
+	 
+	    
+	  //  System.out.println(sm1.students.size());
 	  
 	    
 	    
 	    
-		Student student1 = new Student("G0022222");
-		/*Student student2 = new Student("G0033333");
+	   /*
+		Student student2 = new Student("G0033333");
 		Student student3 = new Student("G0044444");
 		Student student4 = new Student("G0055555");
 		Student student5 = new Student("G0066666");
@@ -28,11 +49,11 @@ public class Main {
 		Student student11 = new Student("G0031313");*/
 		
 		
-		boolean status;
-		int numOfStudents;
+		/*boolean status;
+		int numOfStudents;*/
 		
-		status = sm1.add(student1);
-		System.out.println(status);
+		/*status = sm1.add(student1);
+		System.out.println(status);*/
 		
 		/*status = sm1.add(student2);
 		System.out.println(status);
@@ -67,8 +88,8 @@ public class Main {
 		/*status = sm1.delete("G0011111");
 		System.out.println(status);*/
 		
-		numOfStudents = sm1.findTotalStudents();
-		System.out.println(numOfStudents);
+		/*numOfStudents = sm1.findTotalStudents();
+		System.out.println(numOfStudents);*/
 		
 		
 	}
